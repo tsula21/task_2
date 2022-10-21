@@ -1,0 +1,98 @@
+.fav {
+  /* background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='30' ry='30' stroke='%23FFD303FF' stroke-width='2' stroke-dasharray='9%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e"); */
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='30' ry='30' stroke='%23414141FF' stroke-width='2' stroke-dasharray='9%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+  border-radius: 30px;
+  width: calc(var(--index) * 18.1);
+}
+
+.fav-container {
+  width: calc(100% - 60px);
+  min-height: 150px;
+  margin: 45px auto 45px auto;
+}
+
+.fav-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fbfbfb;
+  border-radius: 30px;
+  padding: 11px 15px;
+  margin-bottom: 20px;
+  transition: all 0.2s ease;
+}
+
+.fav-item img {
+  width: 108px;
+}
+
+.fav-item:hover {
+  background-color: #f6f6f6;
+}
+
+.fav-title {
+  max-width: 184px;
+  color: #414141;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: calc(var(--index) * 1.41);
+}
+
+.fav-details {
+  display: flex;
+  align-items: center;
+}
+
+.fav-description h3 {
+  max-width: 184px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #414141;
+  margin-bottom: 10px;
+}
+
+.fav-details p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #414141;
+  margin-right: calc(var(--index) * 2.9);
+  width: 60px;
+}
+
+.fav .heart {
+  max-width: 27px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.fav .heart:hover {
+  transform: scale(1.1);
+}
+.empty {
+  font-size: 24px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  opacity: 0.4;
+  margin-top: 40px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1536px) {
+  .fav {
+    width: calc(var(--index) * 17.1);
+  }
+
+  .fav-description h3 {
+    /* width: 160px; */
+    width: calc(var(--index) * 7.1);
+  }
+}

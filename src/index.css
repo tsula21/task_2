@@ -1,0 +1,57 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #ffcc26 #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #4141414d;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #ffcc26;
+  border-radius: 15px;
+  border: 3px solid #ffcc26;
+}
+
+:root {
+  --index: calc(1vw + 1vh);
+  --transition: transform 0.75s cubic-bezier(0.11, 0.5, 0, 1);
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background-color: #adadad; */
+  /* color: #fff; */
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: calc(100% - 200px);
+  margin: 0 auto;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}

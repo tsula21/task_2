@@ -1,0 +1,21 @@
+.header {
+  background-color: #ffcc26;
+  width: 100%;
+  height: calc(var(--index) * 5.22);
+  font-family: "Anek Telugu";
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 85px;
+  border-bottom: 1px solid #000000;
+}
+
+.header h2 {
+  color: #414141;
+  font-weight: 600;
+  font-size: calc(var(--index) * 1.3);
+  line-height: 48px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding-right: calc(var(--index) * 4.7);
+}
